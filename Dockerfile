@@ -5,6 +5,6 @@ RUN mkdir /data
 VOLUME /data
 
 WORKDIR /data
-ENTRYPOINT pwd
+#ENTRYPOINT pwd
 CMD pwd
 #CMD echo "Override this command with wget statements..."
