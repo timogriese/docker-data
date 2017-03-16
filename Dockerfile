@@ -2,8 +2,9 @@ FROM timogriese/wget
 MAINTAINER Timo Griese <timo@griese.cc>
 
 RUN mkdir /data
-WORKDIR /data
 VOLUME /data
 
+WORKDIR /data
 ENTRYPOINT pwd
-CMD echo "Override this command with wget statements..."
+CMD pwd
+#CMD echo "Override this command with wget statements..."
